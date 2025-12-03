@@ -1,10 +1,14 @@
+"use client";
 import { GITHUB_PROFILE_URL, LINKEDIN_PROFILE_URL } from "@/utils/constants";
 import { Copy, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import Button from "../common/Button";
 import { WhatsAppBrandIcon } from "../common/WhatsappBrandIcon";
+import { useToast } from "../common/Toast"; // added import
 
 const ContactSection = () => {
+  const toast = useToast();
+
   return (
     <section id="contact" className="min-h-screen flex items-center py-20 px-4">
       <div className="max-w-4xl mx-auto text-center w-full">
@@ -30,7 +34,7 @@ const ContactSection = () => {
                 className="w-5 h-5 text-slate-500 cursor-pointer hover:text-slate-700 transition-colors ml-auto mr-0"
                 onClick={() => {
                   navigator.clipboard.writeText("+9230478663296");
-                  alert("Phone number copied to clipboard!");
+                  toast.show("Phone number copied to clipboard");
                 }}
               />
             </div>
@@ -46,7 +50,7 @@ const ContactSection = () => {
                 className="w-5 h-5 text-slate-500 cursor-pointer hover:text-slate-700 transition-colors ml-auto mr-0"
                 onClick={() => {
                   navigator.clipboard.writeText("amirsuliman01@gmail.com");
-                  alert("Email copied to clipboard!");
+                  toast.show("Email copied to clipboard");
                 }}
               />
             </div>

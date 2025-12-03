@@ -25,10 +25,11 @@ const AboutSection = () => {
   ];
 
   const stats = [
-    { heading: "Projects", value: "10+" },
+    { heading: "Projects", value: "6+" },
     { heading: "Years Exp", value: "2+" },
     { heading: "Dedication", value: "100%" },
   ];
+
   return (
     <section id="about" className="min-h-screen flex items-center py-4 px-4">
       <div className="max-w-6xl mx-auto">
