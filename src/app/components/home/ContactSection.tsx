@@ -10,7 +10,7 @@ const ContactSection = () => {
   const toast = useToast();
 
   return (
-    <section id="contact" className="min-h-screen flex items-center py-20 px-4">
+    <section id="contact" className="min-h-screen flex items-center py-4 px-4">
       <div className="max-w-4xl mx-auto text-center w-full">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
           Let&apos;s Work Together

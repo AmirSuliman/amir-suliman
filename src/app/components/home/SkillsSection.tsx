@@ -2,7 +2,7 @@ import { SKILLS } from "@/utils/constants";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="min-h-screen flex items-center py-20 px-4">
+    <section id="skills" className="min-h-screen flex items-center py-4 px-4">
       <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
           Technical Skills
