@@ -25,7 +25,7 @@ const ContactSection = () => {
               {/* <MessageCircleCode className="w-6 h-6 text-emerald-600 ml-auto" /> */}
               <WhatsAppBrandIcon className="w-6 h-6 text-emerald-600 ml-auto" />
               <Link
-                className="text-lg text-slate-700"
+                className="text-sm md:text-lg text-slate-700"
                 href="https://wa.me/923478663296"
               >
                 +923478663296{" "}
@@ -41,7 +41,7 @@ const ContactSection = () => {
             <div className="flex items-center justify-center gap-4 p-4 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-all">
               <Mail className="w-6 h-6 text-emerald-600 ml-auto" />
               <Link
-                className="text-lg text-slate-700"
+                className="text-sm md:text-lg text-slate-700"
                 href="mailto:amirsuliman01@gmail.com"
               >
                 amirsuliman01@gmail.com{" "}
