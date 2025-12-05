@@ -26,14 +26,14 @@ const ContactSection = () => {
               <WhatsAppBrandIcon className="w-6 h-6 text-emerald-600 ml-auto" />
               <Link
                 className="text-lg text-slate-700"
-                href="https://wa.me/9230478663296"
+                href="https://wa.me/923478663296"
               >
-                +9230478663296{" "}
+                +923478663296{" "}
               </Link>
               <Copy
                 className="w-5 h-5 text-slate-500 cursor-pointer hover:text-slate-700 transition-colors ml-auto mr-0"
                 onClick={() => {
-                  navigator.clipboard.writeText("+9230478663296");
+                  navigator.clipboard.writeText("+923478663296");
                   toast.show("Phone number copied to clipboard");
                 }}
               />
