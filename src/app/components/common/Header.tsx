@@ -51,7 +51,7 @@ const Header = ({
           />
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 list-none">
+          <ul className="hidden md:flex space-x-8 list-none items-center">
             {["home", "about", "projects", "skills", "contact"].map((item) => (
               <li key={item} className="">
                 <button
