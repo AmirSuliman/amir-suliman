@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ToastProvider } from "./components/common/Toast";
+import ThemeProvider from "./components/ThemeProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,8 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <ToastProvider>{children}</ToastProvider>
+      <body className="transition-colors duration-300">
+        <ThemeProvider>
+          <ToastProvider>{children}</ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

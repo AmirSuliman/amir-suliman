@@ -15,7 +15,7 @@ const Button = ({
   return (
     <button
       {...props}
-      className={`px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/50 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer ${className}`}
+      className={`px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/50 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer dark:from-emerald-500 dark:to-teal-500 dark:hover:shadow-emerald-900/50 ${className}`}
     >
       {children}
     </button>
